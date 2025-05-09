@@ -26,7 +26,3 @@ jobs:
       # Step 4: Push the Docker image to Docker Hub
       - name: Push Docker Image
         run: docker push  hariharan2798/demo:${{ github.sha }}
-      - name: Debug Context Variables
-        env:
-          GITHUB_CONTEXT: ${{ toJson(github) }}
-        run: echo "$GITHUB_CONTEXT"
