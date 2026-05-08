@@ -27,4 +27,4 @@ jobs:
       - name: Push Docker Image
         run: docker push  hariharan2798/demo:${{ github.sha }}
       - name: Debug GitHub Context
-        run: echo ${{ toJSON(github) }}
+        run: echo '${{ toJSON(github) }}'
