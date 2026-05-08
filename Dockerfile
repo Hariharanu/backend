@@ -11,4 +11,4 @@ COPY . .
 # Adding environment variable for the port
 EXPOSE 3000
 # Start the application
-CMD ["npm", "start"]
+CMD ["node", "app.js"]
